@@ -12,9 +12,10 @@ function LivePreview({ code }) {
   return (
     <iframe
       srcDoc={code}
-      sandbox="allow-scripts"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation"
       title="Live Preview"
       className="preview-iframe"
+      style={{ display: 'block' }}
     />
   );
 }

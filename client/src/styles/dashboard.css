@@ -175,18 +175,110 @@
   margin-bottom: 28px;
 }
 
+@media (max-width: 1024px) {
+  .dashboard {
+    padding: 28px 32px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .dashboard {
     padding: 24px 20px;
+    max-width: 100%;
   }
 
   .dashboard-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-new-btn {
+    width: 100%;
   }
 
   .dashboard-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card-preview {
+    height: 150px;
+  }
+
+  .project-card-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 16px 12px;
+  }
+
+  .dashboard-title {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 12px;
+  }
+
+  .dashboard-new-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .project-card {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .project-card-info {
+    padding: 12px 16px 6px;
+  }
+
+  .project-card-title {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  .project-card-date {
+    font-size: 12px;
+  }
+
+  .project-card-actions {
+    gap: 8px;
+    padding: 10px 16px 14px;
+  }
+
+  .project-card-open,
+  .project-card-delete {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .dashboard-empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .dashboard-empty-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .dashboard-empty-subtitle {
+    font-size: 14px;
   }
 }

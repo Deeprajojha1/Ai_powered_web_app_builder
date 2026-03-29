@@ -96,8 +96,37 @@
   border-color: #6366f1;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-left {
+    gap: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .navbar-username {
     display: none;
+  }
+
+  .navbar-user-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .navbar-logout {
+    padding: 5px 12px;
+    font-size: 12px;
   }
 }
